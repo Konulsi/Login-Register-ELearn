@@ -1,0 +1,28 @@
+﻿.active-status {
+    width: 20px;
+    height: 20px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.deActive-status {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.content {
+    width: 300px;
+}
+
+.content img {
+   width: 100%;
+}
+
+
+.rounded-circle{
+    border-radius: 0 !important;
+}

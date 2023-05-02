@@ -1,0 +1,50 @@
+﻿@model News
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+
+<div class="container my-5">
+    <div class="card">
+        <h5 class="card-header">Table Basic</h5>
+        <div class="table-responsive text-nowrap">
+            <table class="table">
+                <thead>
+                <tr>
+                <th> Image </th>
+                <th> Header </th>
+                <th> Time </th>
+                <th> Publisher FullName </th>
+
+            </thead>
+            <tbody>
+
+                    <tr>
+
+                        <td>
+                            <img src="~/images/@Model.Image" style="width:100px;height:100px" alt="image" />
+                        </td>
+                        <td style="white-space:normal">
+                            @Model.Header
+                        </td>
+                        <td style="white-space:normal">
+                            @Model.Time
+                        </td>
+                        <td style="white-space:normal">
+                            @Model.Publisher.FullName
+                        </td>
+
+                    </tr>  
+
+
+            </tbody>
+            </table>
+        </div>
+
+    </div>
+    <a class="btn btn-info mt-5" asp-action="Index">Back to main page</a>
+
+
+</div>
+
